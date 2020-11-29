@@ -1,0 +1,120 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<title>魔塔</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Bootstrap -->
+		<link href="../Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/main.css"/>
+		<link rel="stylesheet" href="css/index.css">
+		<script src="js/lib/jquery-3.0.0.min.js"></script>
+		<script src="../Bootstrap/js/bootstrap.min.js"></script>
+		<script src="js/data.js"></script>
+		<script src="js/npc.js"></script>
+		<script src="js/event.js"></script>
+		<script src="js/fight.js"></script>
+		<script src="js/graph.js"></script>
+		<script src="js/storage.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/index.js"></script>
+	</head>
+	<body>
+		<header class="container-fluid">
+			<div class="row">
+				<a href="#"><img src="image/header.png" class="img-responsive"></a>
+			</div>
+			<div class="row">
+				<div class="col-md-3 paddtop"  >
+					<a href="http://www.baidu.com"><img src="image/baidu.png" class="img-responsive"></a>
+				</div>
+				<div class="col-md-5 paddtop" >
+					<input class="search_input form-control" type="text" placeholder="请输入游戏名称" id="s_input" value="">
+					<a class="serach_btn" id="s_btn" href="#" onclick="fun_input();">搜索</a>
+				</div>
+				<div class="col-md-4" >
+					<img src="image/hotel_tel.png" class="img-responsive tel_img" >
+				</div>
+			</div>
+			<div class="row">
+				<nav class="navbar navbar-default">
+					<div class="container-fluid">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand active" href="http://www.4399.com/">首页</a>
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="#">资讯<span class="sr-only">(current)</span></a></li>
+								<li><a href="#">充值</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">游戏下载 <span class="caret"></span></a>
+									<ul class="dropdown-menu" >
+										<li><a href="#">单机</a></li>
+										<li><a href="#">页游</a></li>
+										<li><a href="#">网游</a></li>
+										<li role="separator" class="divider"></li>
+										<li><a href="#">PC</a></li>
+										<li role="separator" class="divider"></li>
+										<li><a href="#">主机</a></li>
+									</ul>
+								</li>
+							</ul>
+
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="login.html">登录/注册</a></li>
+								<li class="dropdown" style="width: 161px">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+										<span><img height="20" width="20" src="image/user.png" ></span>
+										<span id="s_user" class="right" >游客</span>
+										<span class="caret"></span>
+									</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">账号资料</a></li>
+										<li><a href="#">安全隐私</a></li>
+										<li><a href="#">历史记录</a></li>
+										<li role="separator" class="divider"></li>
+										<li><a id="login_off" href="#">退出登录</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div><!-- /.navbar-collapse -->
+					</div><!-- /.container-fluid -->
+				</nav>
+			</div>
+		</header>
+		<div id="game">
+			<center>
+				<canvas height="400px" width="670px" id="canvas" style="width: 800px; height: 500px">你的浏览器不支持canvas</canvas>
+			</center>
+		</div>
+
+		<footer class="container-fluid">
+			<div class="row paddtop">
+				<img class="img-responsive" src="image/footer_service.png">
+			</div>
+			<div class="row company">
+				粤ICP备2020120483号 版权所有Copyright &copy; 2020, All Rights Reserved 无
+			</div>
+		</footer>
+
+
+		<script>
+			function fun_input(){
+				var input = $("#s_input").val();
+				$('#s_btn').attr("href",encodeURI("http://so2.4399.com/search/search.php?k="+input));
+			}
+		</script>
+	</body>
+
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/lib/jquery-3.0.0.min.js"></script>
+    <script src="js/login.js"></script>
+</head>
+<body>
+
+<div class="rg_layout">
+    <div class="rg_left">
+        <p>用户登录</p>
+        <p>USER LOGIN</p>
+
+    </div>
+
+    <div class="rg_center">
+        <div class="rg_form">
+            <!--定义表单 form-->
+            <form action="javascript:void(0)" id="form" method="post">
+                <table>
+                    <tr>
+                        <td class="td_left"><label for="username">用户名</label></td>
+                        <td class="td_right">
+                            <input type="text" name="username" id="username" placeholder="请输入用户名">
+                            <span id="s_username" class="error"></span>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="td_left"><label for="password">密码</label></td>
+                        <td class="td_right">
+                            <input type="password" name="password" id="password" placeholder="请输入密码">
+                            <span id="s_password" class="error"></span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2"  id="td_sub"><input type="submit" id="btn_sub" value="登录"><span id="loading_login"style="margin-left: 5px"></span></td>
+                    </tr>
+                </table>
+
+            </form>
+
+
+        </div>
+
+    </div>
+
+    <div class="rg_right">
+        <p>没有账号?<a href="register.html">立即注册</a></p>
+    </div>
+
+
+</div>
+
+
+</body>
+</html>

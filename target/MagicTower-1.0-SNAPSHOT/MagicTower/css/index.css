@@ -1,0 +1,39 @@
+
+.paddtop{
+    padding-top: 10px;
+}
+.search_input{
+    border: 2px solid #ffc900;
+    width: 400px;
+    height: 35px;
+    float: left;
+    padding-left: 10px;
+    margin-left: 90px;
+    margin-top: 15px;
+}
+.serach_btn{
+    border: 1px solid #ffc900;
+    width: 90px;
+    height: 35px;
+    float: left;
+    line-height: 35px;
+    text-align: center;
+    background-color: #ffc900;
+    margin-top: 15px;
+    color: black;
+}
+.tel_img{
+    float: right;
+    padding-top: 0px;
+}
+
+.company{
+    text-align:center;
+    background-color: #ffc900;
+}
+#game{
+    height: 500px;
+    margin: auto;
+    background: url("../image/background.png") no-repeat;
+    background-position-x: center;
+}
